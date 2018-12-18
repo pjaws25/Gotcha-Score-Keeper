@@ -27,13 +27,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! PointsCell
         
         cell.textLabel?.text = items[indexPath.row]
+        
+/*TESTING:
         //cell.delegate = self
-        cell.setLabel()
-        cell.pointButtonPressed(self)
+        //cell.setLabel()
+        //cell.pointButtonPressed(self)
         
         cell.preservesSuperviewLayoutMargins = false
         cell.separatorInset = UIEdgeInsets.zero
         cell.layoutMargins = UIEdgeInsets.zero
+ */
         
         return cell
     }

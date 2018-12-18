@@ -7,29 +7,25 @@
 //
 
 import UIKit
-
+//Testing Protocols. Not needed in code.
 /*protocol ScoreCellDelegate {
     func didTappedButton (index: Int)
 }*/
 
 class PointsCell: UITableViewCell {
     
-   // var delegate : ScoreCellDelegate?
-   // var index : IndexPath?
+   // var delegate : ScoreCellDelegate? - Needed for protocols. Need to setup a delegate variable
     var winScore = 0
     @IBOutlet weak var scoreUILabel: UILabel!
     @IBOutlet weak var pointButton: UIButton!
     
-    /*func viewDidLoad() {
+    /*func setLabel() { -- function example for IBOutlet Label
         scoringLabel.text = "\(winScore)"
     }*/
-    
-    func setLabel(){
-        scoreUILabel.text = "\(winScore)"
-    }
+
     
    @IBAction func pointButtonPressed(_ sender: Any) {
-    //delegate?.didTappedButton(index: (index?.row)!)
+    //delegate?.didTappedButton(index: (index?.row)!) -- Delegate needed for protocols
         winScore += 1
         scoreUILabel.text = "\(winScore)"
  
@@ -37,22 +33,3 @@ class PointsCell: UITableViewCell {
     
 }
 
-
-    /*func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! PointsCell
-        
-        cell.textLabel?.text = "it works!"
-        
-        return cell
-    }
-    
-        override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-        override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }*/
