@@ -17,27 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dP9-XA-RNf">
-                                <rect key="frame" x="37" y="366" width="302" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.91240423920000002" green="0.36291175460000002" blue="0.33971466049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
-                                <state key="normal" title="Wins">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAv-wJ-fQ7">
-                                <rect key="frame" x="36" y="438" width="302" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAv-wJ-fQ7">
+                                <rect key="frame" x="37" y="522" width="302" height="38"/>
                                 <color key="backgroundColor" red="0.91240423920000002" green="0.36291175460000002" blue="0.33971466049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                 <state key="normal" title="Gotchas">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXr-fN-h43">
-                                <rect key="frame" x="37" y="366" width="302" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXr-fN-h43">
+                                <rect key="frame" x="37" y="451" width="302" height="38"/>
                                 <color key="backgroundColor" red="0.91240423920000002" green="0.36291175460000002" blue="0.33971466049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                 <state key="normal" title="Wins Scoreboard">
@@ -47,24 +36,27 @@
                                     <segue destination="L7I-H4-8h3" kind="show" id="PRF-6j-IcD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gotcha Score Keeper " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qnz-zD-13X">
-                                <rect key="frame" x="37" y="236.66666666666666" width="302" height="36.333333333333343"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Gotcha Score Keeper " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qnz-zD-13X">
+                                <rect key="frame" x="33.666666666666657" y="150" width="308" height="36.333333333333343"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyU-c7-2u6">
-                                <rect key="frame" x="37" y="508" width="302" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.91240423920000002" green="0.36291175460000002" blue="0.33971466049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
-                                <state key="normal" title="Get Gots">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eAv-wJ-fQ7" firstAttribute="leading" secondItem="TK5-pe-Swu" secondAttribute="leading" constant="37" id="6kI-3U-r3m"/>
+                            <constraint firstItem="Qnz-zD-13X" firstAttribute="leading" secondItem="TK5-pe-Swu" secondAttribute="leading" constant="33.670000000000002" id="AVp-iy-LME"/>
+                            <constraint firstItem="TK5-pe-Swu" firstAttribute="trailing" secondItem="KXr-fN-h43" secondAttribute="trailing" constant="36" id="Dbh-zK-uHh"/>
+                            <constraint firstItem="TK5-pe-Swu" firstAttribute="trailing" secondItem="Qnz-zD-13X" secondAttribute="trailing" constant="33.329999999999998" id="Lyl-x8-WAj"/>
+                            <constraint firstItem="TK5-pe-Swu" firstAttribute="bottom" secondItem="eAv-wJ-fQ7" secondAttribute="bottom" constant="162" id="MHg-be-zSf"/>
+                            <constraint firstItem="TK5-pe-Swu" firstAttribute="trailing" secondItem="eAv-wJ-fQ7" secondAttribute="trailing" constant="36" id="NFE-jl-dFd"/>
+                            <constraint firstItem="eAv-wJ-fQ7" firstAttribute="top" secondItem="KXr-fN-h43" secondAttribute="bottom" constant="33" id="Yko-G9-NFi"/>
+                            <constraint firstItem="KXr-fN-h43" firstAttribute="leading" secondItem="TK5-pe-Swu" secondAttribute="leading" constant="37" id="bGS-t2-GeX"/>
+                            <constraint firstItem="eAv-wJ-fQ7" firstAttribute="top" secondItem="KXr-fN-h43" secondAttribute="bottom" constant="33" id="cqw-ha-Qra"/>
+                            <constraint firstItem="Qnz-zD-13X" firstAttribute="top" secondItem="TK5-pe-Swu" secondAttribute="top" constant="118" id="goZ-cs-foi"/>
+                            <constraint firstItem="KXr-fN-h43" firstAttribute="top" secondItem="Qnz-zD-13X" secondAttribute="bottom" constant="264.67000000000002" id="uo5-Cs-1x6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TK5-pe-Swu"/>
                     </view>
                     <navigationItem key="navigationItem" id="fqd-pO-Y4k"/>
@@ -139,21 +131,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="umQ-0K-E5V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1066.4000000000001" y="8.1280788177339911"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="qRB-pj-HPL">
-            <objects>
-                <viewController id="DVq-fp-VLh" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="N2y-MV-llu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="aCg-m5-1ho"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3W8-8a-S5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1834" y="741"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Oj0-bq-ljw">
