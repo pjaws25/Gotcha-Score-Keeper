@@ -7,28 +7,20 @@
 //
 
 import UIKit
-//Testing Protocols. Not needed in code.
-/*protocol ScoreCellDelegate {
-    func didTappedButton (index: Int)
-}*/
 
 class PointsCell: UITableViewCell {
     
-   // var delegate : ScoreCellDelegate? - Needed for protocols. Need to setup a delegate variable
+    var buttonPressed: (()->Void)? //needed for closure variable
+    
     var winScore = 0
     @IBOutlet weak var scoreUILabel: UILabel!
     @IBOutlet weak var pointButton: UIButton!
-    
-    /*func setLabel() { -- function example for IBOutlet Label
-        scoringLabel.text = "\(winScore)"
-    }*/
 
-    
+
+
    @IBAction func pointButtonPressed(_ sender: Any) {
-    //delegate?.didTappedButton(index: (index?.row)!) -- Delegate needed for protocols
-        winScore += 1
-        scoreUILabel.text = "\(winScore)"
- 
+   buttonPressed?()
+    // closure variable in UITableViewCell subclass. When button will be pressed this closure will let controller know that button's been pressed
     }
     
 }
