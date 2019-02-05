@@ -17,17 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAv-wJ-fQ7">
-                                <rect key="frame" x="37" y="522" width="302" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXr-fN-h43">
+                                <rect key="frame" x="0.0" y="558" width="375" height="72"/>
                                 <color key="backgroundColor" red="0.91240423920000002" green="0.36291175460000002" blue="0.33971466049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
-                                <state key="normal" title="Gotchas">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXr-fN-h43">
-                                <rect key="frame" x="37" y="451" width="302" height="38"/>
-                                <color key="backgroundColor" red="0.91240423920000002" green="0.36291175460000002" blue="0.33971466049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="z7v-aE-9NF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                 <state key="normal" title="Wins Scoreboard">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -36,26 +31,43 @@
                                     <segue destination="L7I-H4-8h3" kind="show" id="PRF-6j-IcD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Gotcha Score Keeper " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qnz-zD-13X">
-                                <rect key="frame" x="33.666666666666657" y="150" width="308" height="36.333333333333343"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gotcha " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qnz-zD-13X">
+                                <rect key="frame" x="0.0" y="88" width="375" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="n4M-Iu-DFb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score Keeper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rky-UQ-k51">
+                                <rect key="frame" x="0.0" y="179" width="375" height="90"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dart PNG" translatesAutoresizingMaskIntoConstraints="NO" id="PKr-7h-EP7">
+                                <rect key="frame" x="57" y="289" width="275" height="202"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="202" id="rwY-qv-ZCl"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="eAv-wJ-fQ7" firstAttribute="leading" secondItem="TK5-pe-Swu" secondAttribute="leading" constant="37" id="6kI-3U-r3m"/>
-                            <constraint firstItem="Qnz-zD-13X" firstAttribute="leading" secondItem="TK5-pe-Swu" secondAttribute="leading" constant="33.670000000000002" id="AVp-iy-LME"/>
-                            <constraint firstItem="TK5-pe-Swu" firstAttribute="trailing" secondItem="KXr-fN-h43" secondAttribute="trailing" constant="36" id="Dbh-zK-uHh"/>
-                            <constraint firstItem="TK5-pe-Swu" firstAttribute="trailing" secondItem="Qnz-zD-13X" secondAttribute="trailing" constant="33.329999999999998" id="Lyl-x8-WAj"/>
-                            <constraint firstItem="TK5-pe-Swu" firstAttribute="bottom" secondItem="eAv-wJ-fQ7" secondAttribute="bottom" constant="162" id="MHg-be-zSf"/>
-                            <constraint firstItem="TK5-pe-Swu" firstAttribute="trailing" secondItem="eAv-wJ-fQ7" secondAttribute="trailing" constant="36" id="NFE-jl-dFd"/>
-                            <constraint firstItem="eAv-wJ-fQ7" firstAttribute="top" secondItem="KXr-fN-h43" secondAttribute="bottom" constant="33" id="Yko-G9-NFi"/>
-                            <constraint firstItem="KXr-fN-h43" firstAttribute="leading" secondItem="TK5-pe-Swu" secondAttribute="leading" constant="37" id="bGS-t2-GeX"/>
-                            <constraint firstItem="eAv-wJ-fQ7" firstAttribute="top" secondItem="KXr-fN-h43" secondAttribute="bottom" constant="33" id="cqw-ha-Qra"/>
-                            <constraint firstItem="Qnz-zD-13X" firstAttribute="top" secondItem="TK5-pe-Swu" secondAttribute="top" constant="118" id="goZ-cs-foi"/>
-                            <constraint firstItem="KXr-fN-h43" firstAttribute="top" secondItem="Qnz-zD-13X" secondAttribute="bottom" constant="264.67000000000002" id="uo5-Cs-1x6"/>
+                            <constraint firstItem="KXr-fN-h43" firstAttribute="top" secondItem="PKr-7h-EP7" secondAttribute="bottom" constant="67" id="0SI-Ho-yhn"/>
+                            <constraint firstItem="Qnz-zD-13X" firstAttribute="trailing" secondItem="KXr-fN-h43" secondAttribute="trailing" id="2IO-Tt-sNo"/>
+                            <constraint firstItem="Rky-UQ-k51" firstAttribute="top" secondItem="TK5-pe-Swu" secondAttribute="top" constant="91" id="7hi-xz-SEl"/>
+                            <constraint firstItem="TK5-pe-Swu" firstAttribute="trailing" secondItem="PKr-7h-EP7" secondAttribute="trailing" constant="43" id="HRj-l2-ZT8"/>
+                            <constraint firstAttribute="trailing" secondItem="Qnz-zD-13X" secondAttribute="trailing" id="JnX-Wq-lQR"/>
+                            <constraint firstItem="Qnz-zD-13X" firstAttribute="trailing" secondItem="Rky-UQ-k51" secondAttribute="trailing" id="MqM-pf-HDS"/>
+                            <constraint firstItem="Qnz-zD-13X" firstAttribute="leading" secondItem="Rky-UQ-k51" secondAttribute="leading" id="U7e-re-ZXZ"/>
+                            <constraint firstItem="Qnz-zD-13X" firstAttribute="leading" secondItem="KXr-fN-h43" secondAttribute="leading" id="WgQ-9g-xlO"/>
+                            <constraint firstItem="PKr-7h-EP7" firstAttribute="top" secondItem="Rky-UQ-k51" secondAttribute="bottom" constant="20" id="hoy-Cr-k1J"/>
+                            <constraint firstItem="PKr-7h-EP7" firstAttribute="leading" secondItem="TK5-pe-Swu" secondAttribute="leading" constant="57" id="lrF-VA-OFh"/>
+                            <constraint firstItem="Qnz-zD-13X" firstAttribute="top" secondItem="TK5-pe-Swu" secondAttribute="top" id="mpg-Dw-PE8"/>
+                            <constraint firstItem="TK5-pe-Swu" firstAttribute="bottom" secondItem="KXr-fN-h43" secondAttribute="bottom" constant="148" id="u6E-jH-xlu"/>
+                            <constraint firstItem="Qnz-zD-13X" firstAttribute="leading" secondItem="HgI-ph-2VF" secondAttribute="leading" id="wYE-sN-NXY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TK5-pe-Swu"/>
                     </view>
@@ -63,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TIY-lv-GFi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1834.4000000000001" y="8.5457271364317844"/>
+            <point key="canvasLocation" x="-1834.4000000000001" y="8.1280788177339911"/>
         </scene>
         <!--Scoreboard-->
         <scene sceneID="tVL-YC-yxV">
@@ -152,4 +164,7 @@
             <point key="canvasLocation" x="-2559" y="9"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dart PNG" width="980" height="890"/>
+    </resources>
 </document>
