@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		934BAC252218DE9C005511EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 934BAC242218DE9C005511EE /* GoogleService-Info.plist */; };
+		934BAC272219DBF8005511EE /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934BAC262219DBF8005511EE /* HomeModel.swift */; };
 		93A94CB121AE24BE00554D52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A94CB021AE24BE00554D52 /* AppDelegate.swift */; };
 		93A94CB321AE24BE00554D52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A94CB221AE24BE00554D52 /* ViewController.swift */; };
 		93A94CB821AE24C000554D52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93A94CB721AE24C000554D52 /* Assets.xcassets */; };
 		93A94CBB21AE24C000554D52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A94CB921AE24C000554D52 /* LaunchScreen.storyboard */; };
 		93CFE7B621BA146900F305F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CFE7B421BA146900F305F7 /* Main.storyboard */; };
 		93CFE7B821BA170B00F305F7 /* PointsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFE7B721BA170B00F305F7 /* PointsCell.swift */; };
+		F66544E8B08C7F4DFF7EC755 /* libPods-Gotcha! Score Keeper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 455B7E609AC3D4F583470695 /* libPods-Gotcha! Score Keeper.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03FF008015A28B0D71AC16EB /* Pods-Gotcha! Score Keeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gotcha! Score Keeper.debug.xcconfig"; path = "Target Support Files/Pods-Gotcha! Score Keeper/Pods-Gotcha! Score Keeper.debug.xcconfig"; sourceTree = "<group>"; };
+		10BF8E7723DD8F8C841073D9 /* Pods-Gotcha! Score Keeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gotcha! Score Keeper.release.xcconfig"; path = "Target Support Files/Pods-Gotcha! Score Keeper/Pods-Gotcha! Score Keeper.release.xcconfig"; sourceTree = "<group>"; };
+		455B7E609AC3D4F583470695 /* libPods-Gotcha! Score Keeper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gotcha! Score Keeper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		934BAC242218DE9C005511EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		934BAC262219DBF8005511EE /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		93A94CAD21AE24BE00554D52 /* Gotcha! Score Keeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gotcha! Score Keeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A94CB021AE24BE00554D52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93A94CB221AE24BE00554D52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F66544E8B08C7F4DFF7EC755 /* libPods-Gotcha! Score Keeper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E6862BB9C6D728D7B6452D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				455B7E609AC3D4F583470695 /* libPods-Gotcha! Score Keeper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B4C3848C8B54DD32A665B0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03FF008015A28B0D71AC16EB /* Pods-Gotcha! Score Keeper.debug.xcconfig */,
+				10BF8E7723DD8F8C841073D9 /* Pods-Gotcha! Score Keeper.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		93A94CA421AE24BE00554D52 = {
 			isa = PBXGroup;
 			children = (
 				93A94CAF21AE24BE00554D52 /* Gotcha! Score Keeper */,
 				93A94CAE21AE24BE00554D52 /* Products */,
+				8B4C3848C8B54DD32A665B0D /* Pods */,
+				4E6862BB9C6D728D7B6452D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +84,7 @@
 		93A94CAF21AE24BE00554D52 /* Gotcha! Score Keeper */ = {
 			isa = PBXGroup;
 			children = (
+				934BAC242218DE9C005511EE /* GoogleService-Info.plist */,
 				93A94CB021AE24BE00554D52 /* AppDelegate.swift */,
 				93A94CB221AE24BE00554D52 /* ViewController.swift */,
 				93CFE7B721BA170B00F305F7 /* PointsCell.swift */,
@@ -63,6 +92,7 @@
 				93A94CB721AE24C000554D52 /* Assets.xcassets */,
 				93A94CB921AE24C000554D52 /* LaunchScreen.storyboard */,
 				93A94CBC21AE24C000554D52 /* Info.plist */,
+				934BAC262219DBF8005511EE /* HomeModel.swift */,
 			);
 			path = "Gotcha! Score Keeper";
 			sourceTree = "<group>";
@@ -74,6 +104,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93A94CBF21AE24C000554D52 /* Build configuration list for PBXNativeTarget "Gotcha! Score Keeper" */;
 			buildPhases = (
+				FF2DE03564BFDBAEBAB4E18A /* [CP] Check Pods Manifest.lock */,
 				93A94CA921AE24BE00554D52 /* Sources */,
 				93A94CAA21AE24BE00554D52 /* Frameworks */,
 				93A94CAB21AE24BE00554D52 /* Resources */,
@@ -126,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93CFE7B621BA146900F305F7 /* Main.storyboard in Resources */,
+				934BAC252218DE9C005511EE /* GoogleService-Info.plist in Resources */,
 				93A94CBB21AE24C000554D52 /* LaunchScreen.storyboard in Resources */,
 				93A94CB821AE24C000554D52 /* Assets.xcassets in Resources */,
 			);
@@ -133,11 +165,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FF2DE03564BFDBAEBAB4E18A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gotcha! Score Keeper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		93A94CA921AE24BE00554D52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934BAC272219DBF8005511EE /* HomeModel.swift in Sources */,
 				93A94CB321AE24BE00554D52 /* ViewController.swift in Sources */,
 				93CFE7B821BA170B00F305F7 /* PointsCell.swift in Sources */,
 				93A94CB121AE24BE00554D52 /* AppDelegate.swift in Sources */,
@@ -284,6 +342,7 @@
 		};
 		93A94CC021AE24C000554D52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03FF008015A28B0D71AC16EB /* Pods-Gotcha! Score Keeper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +361,7 @@
 		};
 		93A94CC121AE24C000554D52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10BF8E7723DD8F8C841073D9 /* Pods-Gotcha! Score Keeper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
