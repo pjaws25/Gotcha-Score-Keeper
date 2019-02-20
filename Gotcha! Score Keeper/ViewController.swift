@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     var items = [Item]()
     var refNames: DatabaseReference!
+    //var databaseHandle: DatabaseHandle?
     
     @IBOutlet weak var listTableView: UITableView!
     @IBAction func addItem(_ sender: AnyObject) {
@@ -26,12 +27,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         listTableView.dataSource = self
         
         // Need to create a reference to the Firebase database
-        refNames = Database.database().reference().child("players")
+        refNames = Database.database().reference().child("Players")
         
         // This will be called if we make any changes in our Firbase database
-        refNames.observe(DataEventType.value, with:{(snapshot) in
+        refNames.observe(DataEventType.value, with: { (snapshot) in
             //checks to see if there are any data in Firebase and fetch all the data.
-            if snapshot.childrenCount>0{
+            if snapshot.childrenCount > 0 {
                 // First we need to remove all the  existing players from the array in "items"
                 self.items.removeAll()
                 
@@ -42,7 +43,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     let playerPoints = playersObject?["points"]
                     let playerId = playersObject?["id"]
                     
-                    let player = Item(id: playerId as? String, name:playerName as? String, points:(playerPoints as? Int!)!)
+                    let player = Item(id: playerId as? String, name: playerName as? String, points: playerPoints as! Int)
                     
                     self.items.append(player)
                     
@@ -68,32 +69,49 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         cell.textLabel?.text = item.name
         cell.scoreUILabel.text = "\(String(describing: item.points))"
+
         
         // create auto ID for points and save initial point value to firebase database
-        let key = self.refNames.childByAutoId().key
-        let players = ["id": key!,
-                       "name": cell.textLabel?.text!,
-                       "points": cell.scoreUILabel.text! ]
-
-        self.refNames.child(key!).setValue(players)
-        
+       
        // assign parameter to cell and say that if button is pressed, increase points of this item and reload this row.
         cell.buttonPressed = { // this gets called when `buttonPressed?()` is called from cell class
             self.items[indexPath.row].points += 1
+            
             tableView.reloadRows(at: [indexPath], with: .automatic)
-            
-            let id = item.id
+    
+            /*
+            let id =  item.id
             let name = cell.textLabel?.text
-            let points = cell.scoreUILabel.text
+            let points = cell.scoreUILabel?.text
+            self.updatePoint(id: id!, name: name!, points: points!)*/
+            let id =  item.id
+            let name = item.name
+            let points = item.points
             
-            self.updatePoint(id: id!, name: name!, points: points!)
+            let player = ["id": id!,
+                          "name": name!,
+                          "points": points] as [String : Any]
+            
+            self.refNames.child(id!).setValue(player)
+
+        
             
             //self.saveData()
         
         }
         
         return cell
+        
     }
+    
+    /*func updatePoint(id: String, name: String, points: String){
+        let player = [
+            "id": id,
+            "name": name,
+            "points": points]
+        
+        self.refNames.child(id).setValue(player)
+    }*/
     
     //Since Codable is used to encode and decode custom model to UserDefaults. - Need JSONEncoder SAVING
     /*func saveData() {
@@ -102,14 +120,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             UserDefaults.standard.set(encoded, forKey: "items")
         } catch { print(error) }
     }*/
-    
-    func updatePoint(id: String, name: String, points: String){
-        let player = ["id": id,
-        "name": name,
-        "points": points]
-        
-        refNames.child(id).setValue(player)
-    }
     
     
     func alert() {
@@ -128,7 +138,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 //self.saveData()
                 let indexPath = IndexPath(row: self.items.count - 1, section: 0)
                 self.listTableView.insertRows(at: [indexPath], with: .automatic)
-            
+                
+                let key = self.refNames.childByAutoId().key
+                let players = ["id": key!,
+                               "name": textfield.text!,
+                               "points": 0] as [String : Any]
+                
+                self.refNames.child(key!).setValue(players)
+                
 
 
         }
