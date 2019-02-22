@@ -22,6 +22,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         alert()
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         listTableView.dataSource = self
@@ -58,6 +59,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
         } catch { print(error) }*/
     }
+    
+    /*override func viewDidAppear(_ animated: Bool) {
+        
+        let isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIn")
+        
+        if isUserLoggedIn{
+        self.performSegue(withIdentifier: "loginView", sender: self)
+        }
+    }*/
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
@@ -169,7 +179,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
+    
 }
+
 /*extension ViewController: ScoreCellDelegate {
     func didTappedButton(index: Int) {
 
@@ -177,4 +189,3 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
 }*/
-

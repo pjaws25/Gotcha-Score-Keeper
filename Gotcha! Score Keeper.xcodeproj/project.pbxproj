@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9303502F221E42220051F3FC /* Login ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303502E221E42220051F3FC /* Login ViewController.swift */; };
+		93170CCD221F90510008D6D0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93170CCC221F90510008D6D0 /* MainViewController.swift */; };
 		934BAC252218DE9C005511EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 934BAC242218DE9C005511EE /* GoogleService-Info.plist */; };
 		934BAC272219DBF8005511EE /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934BAC262219DBF8005511EE /* HomeModel.swift */; };
 		93A94CB121AE24BE00554D52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A94CB021AE24BE00554D52 /* AppDelegate.swift */; };
@@ -22,6 +24,8 @@
 		03FF008015A28B0D71AC16EB /* Pods-Gotcha! Score Keeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gotcha! Score Keeper.debug.xcconfig"; path = "Target Support Files/Pods-Gotcha! Score Keeper/Pods-Gotcha! Score Keeper.debug.xcconfig"; sourceTree = "<group>"; };
 		10BF8E7723DD8F8C841073D9 /* Pods-Gotcha! Score Keeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gotcha! Score Keeper.release.xcconfig"; path = "Target Support Files/Pods-Gotcha! Score Keeper/Pods-Gotcha! Score Keeper.release.xcconfig"; sourceTree = "<group>"; };
 		455B7E609AC3D4F583470695 /* libPods-Gotcha! Score Keeper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gotcha! Score Keeper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9303502E221E42220051F3FC /* Login ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login ViewController.swift"; sourceTree = "<group>"; };
+		93170CCC221F90510008D6D0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		934BAC242218DE9C005511EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		934BAC262219DBF8005511EE /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		93A94CAD21AE24BE00554D52 /* Gotcha! Score Keeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gotcha! Score Keeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +97,8 @@
 				93A94CB921AE24C000554D52 /* LaunchScreen.storyboard */,
 				93A94CBC21AE24C000554D52 /* Info.plist */,
 				934BAC262219DBF8005511EE /* HomeModel.swift */,
+				9303502E221E42220051F3FC /* Login ViewController.swift */,
+				93170CCC221F90510008D6D0 /* MainViewController.swift */,
 			);
 			path = "Gotcha! Score Keeper";
 			sourceTree = "<group>";
@@ -198,7 +204,9 @@
 				934BAC272219DBF8005511EE /* HomeModel.swift in Sources */,
 				93A94CB321AE24BE00554D52 /* ViewController.swift in Sources */,
 				93CFE7B821BA170B00F305F7 /* PointsCell.swift in Sources */,
+				93170CCD221F90510008D6D0 /* MainViewController.swift in Sources */,
 				93A94CB121AE24BE00554D52 /* AppDelegate.swift in Sources */,
+				9303502F221E42220051F3FC /* Login ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
