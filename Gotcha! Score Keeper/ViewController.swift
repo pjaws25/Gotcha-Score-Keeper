@@ -173,10 +173,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        let item = items[indexPath.row]
         items.remove(at: indexPath.row)
         tableView.deleteRows(at: [indexPath], with: .automatic)
+        self.deleteEntry(id: item.id!)
         //saveData()
         
+    }
+    func deleteEntry (id: String){
+        refNames.child(id).setValue(nil)
     }
     
     
