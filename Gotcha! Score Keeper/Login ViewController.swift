@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Login_ViewController: UIViewController {
+class Login_ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var userNameLabel: UITextField!
     @IBOutlet weak var userPasswordLabel: UITextField!
@@ -17,13 +17,19 @@ class Login_ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.isNavigationBarHidden = true
+        
+        self.userPasswordLabel.delegate = self
+        self.userNameLabel.delegate = self
         
         self.loginButton.layer.cornerRadius = 10.0
         self.loginButton.layer.borderWidth = 1.0
         self.loginButton.layer.borderColor = UIColor.white.cgColor
         
         // Do any additional setup after loading the view.
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
