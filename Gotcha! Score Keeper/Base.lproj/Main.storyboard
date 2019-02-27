@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="height" constant="72" id="z7v-aE-9NF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
-                                <state key="normal" title="Wins Scoreboard">
+                                <state key="normal" title="Gotcha Scoreboard">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
