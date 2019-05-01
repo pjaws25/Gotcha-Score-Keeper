@@ -87,6 +87,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.buttonPressed = { // this gets called when `buttonPressed?()` is called from cell class
             self.items[indexPath.row].points += 1
             
+            
             tableView.reloadRows(at: [indexPath], with: .automatic)
     
             /*
@@ -108,6 +109,32 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
             //self.saveData()
         
+        }
+        cell.minusButton = { // this gets called when `buttonPressed?()` is called from cell class
+            self.items[indexPath.row].points -= 1
+            
+            
+            tableView.reloadRows(at: [indexPath], with: .automatic)
+            
+            /*
+             let id =  item.id
+             let name = cell.textLabel?.text
+             let points = cell.scoreUILabel?.text
+             self.updatePoint(id: id!, name: name!, points: points!)*/
+            let id =  item.id
+            let name = item.name
+            let points = item.points
+            
+            let player = ["id": id!,
+                          "name": name!,
+                          "points": points] as [String : Any]
+            
+            self.refNames.child(id!).setValue(player)
+            
+            
+            
+            //self.saveData()
+            
         }
         
         return cell
